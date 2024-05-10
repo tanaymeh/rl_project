@@ -149,12 +149,8 @@ class Learner:
             self.target_model.load_state_dict(self.online_model.state_dict())
 
     def save_models(self, ep):
-        torch.save(
-            self.online_model.state_dict(), f"/kaggle/working/online_model_{ep}_eps.pth"
-        )
-        torch.save(
-            self.target_model.state_dict(), f"/kaggle/working/target_model_{ep}_eps.pth"
-        )
+        torch.save(self.online_model.state_dict(), f"online_model_{ep}_eps.pth")
+        torch.save(self.target_model.state_dict(), f"target_model_{ep}_eps.pth")
         print(f"Saved models for Episode: {ep}")
 
 
