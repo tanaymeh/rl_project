@@ -1,4 +1,4 @@
-# rl_project
+# Reinforcement Learning Project (CM50270)
 This is the repo for our Reinforcement Learning Module (CM50270)
 
 To train the agent you need to run the following command:
